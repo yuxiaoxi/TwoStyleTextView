@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:twostyle="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.xjtu.yuzhuo.twostyletextview.MainActivity">
+
+    <com.xjtu.yuzhuo.twostyletextview.view.TwoStyleTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        twostyle:titleText="姓名:"
+        twostyle:titleTextSize="18sp"
+        twostyle:titleTextColor="@android:color/holo_red_light"
+        twostyle:contentText="在xml布局文件中，我们既可以设置，也可以设置（或者dip)。一般情况下，我们都会选择使用，这样可以保证不同屏幕分辨率的机器上布局一致。但是在代码中，如何处理呢？很多控件的方法中都只提供了设置的方法，例如，并没有提供设置的方法。这个时候，如果需要设置的话，就要将转换成了."
+        twostyle:contentTextSize="18sp"
+        twostyle:contentTextColor="@android:color/holo_blue_bright"
+        />
+</RelativeLayout>
