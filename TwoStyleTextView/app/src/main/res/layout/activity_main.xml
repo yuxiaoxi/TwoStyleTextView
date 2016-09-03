@@ -18,7 +18,8 @@
         twostyle:titleText="姓名:"
         twostyle:titleTextSize="18sp"
         twostyle:titleTextColor="@android:color/holo_red_light"
-        twostyle:contentText="在xml布局文件中，我们既可以设置，也可以设置（或者dip)。一般情况下，我们都会选择使用，这样可以保证不同屏幕分辨率的机器上布局一致。但是在代码中，如何处理呢？很多控件的方法中都只提供了设置的方法，例如，并没有提供设置的方法。这个时候，如果需要设置的话，就要将转换成了."
+        twostyle:contentText="一直以为幸福在远方，在可以追逐的未来。后来才发现，那些拥抱过的人，握过的手、唱过的歌、流过的泪、爱过的人、所谓的曾经，就是幸福。
+        在无数的夜里，说过的话、打过的电话，看过的电影、流过的眼泪、看见的或看不见的感动，我们都曾经有过，然后在时间的穿梭中，一切成为了永恒！"
         twostyle:contentTextSize="18sp"
         twostyle:contentTextColor="@android:color/holo_blue_bright"
         />

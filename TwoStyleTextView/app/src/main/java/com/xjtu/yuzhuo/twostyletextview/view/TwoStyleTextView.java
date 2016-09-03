@@ -151,7 +151,7 @@ public class TwoStyleTextView extends View{
         testPaint = new Paint();
         testPaint.setTextSize(mContentTextSize);
         testBound = new Rect();
-        testPaint.getTextBounds("我",0,"我".length(),testBound);
+        testPaint.getTextBounds("我,",0,"我,".length(),testBound);
     }
 
     @Override
@@ -171,7 +171,7 @@ public class TwoStyleTextView extends View{
             mtitlePaint.getTextBounds(mTitleText, 0, mTitleText.length(), mtitleBound);
             mcontentPaint.setTextSize(mContentTextSize);
             mcontentPaint.getTextBounds(mContentText, 0, mContentText.length(), mcontentBound);
-            float wordWidth = (float)testBound.width();
+            float wordWidth = (float)testBound.width()-6;
             float textWidth = mTitleText.length()*wordWidth+mContentText.length()*wordWidth;
 
             int desired = (int) (getPaddingLeft() + textWidth + getPaddingRight());
@@ -213,13 +213,12 @@ public class TwoStyleTextView extends View{
         mcontentPaint.setColor(mContentTextColor);
         canvas.drawText(mTitleText, getPaddingLeft(),textHeight+getPaddingTop(), mtitlePaint);
         canvas.drawText(mContentText.substring(0,enterofIndex), getPaddingLeft()*2+mtitleBound.width(),textHeight+getPaddingTop(), mcontentPaint);
+
         for (int i = 1;rows>1&&i<rows;i++){
             if(i == rows -1){//最后一行
                 canvas.drawText(mContentText.substring(enterofIndex+(i-1)*rowsCount), getPaddingLeft(),(textHeight+getPaddingTop())*(i+1), mcontentPaint);
-
             }else{
                 canvas.drawText(mContentText.substring(enterofIndex+(i-1)*rowsCount,enterofIndex+i*rowsCount), getPaddingLeft(),(textHeight+getPaddingTop())*(i+1), mcontentPaint);
-
             }
         }
     }
