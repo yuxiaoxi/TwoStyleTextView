@@ -18,8 +18,7 @@
         twostyle:titleText="姓名:"
         twostyle:titleTextSize="18sp"
         twostyle:titleTextColor="@android:color/holo_red_light"
-        twostyle:contentText="一直以为幸福在远方，在可以追逐的未来。后来才发现，那些拥抱过的人，握过的手、唱过的歌、流过的泪、爱过的人、所谓的曾经，就是幸福。
-        在无数的夜里，说过的话、打过的电话，看过的电影、流过的眼泪、看见的或看不见的感动，我们都曾经有过，然后在时间的穿梭中，一切成为了永恒！"
+        twostyle:contentText="一直以为幸福在远方，在可以追逐的未来。后来才发现，那些拥抱过的人，握过的手、唱过的歌、流过的泪、爱过的人、所谓的曾经，就是幸福。在无数的夜里，说过的话、打过的电话，看过的电影、流过的眼泪、看见的或看不见的感动，我们都曾经有过，然后在时间的穿梭中，一切成为了永恒！"
         twostyle:contentTextSize="18sp"
         twostyle:contentTextColor="@android:color/holo_blue_bright"
         />
